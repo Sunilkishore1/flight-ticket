@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#company-name{
   color: white;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.company{
+  display: flex;
+  /* margin: 20px; */
+  width: 28%;
+}
+.company img{
+  height: 70px;
+}
+.flex-container{
+  background-image: url('./assets/background-1.jpg');
+  /* filter: blur(8px); */
+  height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container{
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.tools{
+  display: flex;
+  justify-content: space-around;
+  width: 37%;
+  margin-top: 35px;
+}
+.tools a{
+  color: white;
+  text-decoration: none;
+}
+.tools a:hover{
+  color:rgb(2, 87, 136) ;
+}
+.profile{
+  margin: 20px;
+  display: flex;
+}
+.profile h3{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: small;
+}
+.profile img{
+  margin-top: 10px;
+  border: 3px solid black;
+  border-radius: 30px;
+  height: 30px;
+}
+#search-button img{
+  width: 10px;
+}
+.third-nav{
+  width: 35%;
+  display: flex;
+}
+.search{
+  margin-top: 30px;
+  width:280px;
+}
+.search input{
+  margin-left: 30px;
+  border: 3px solid white;
+  border-radius:2cm ;
+  width:200px;
+  height: 30px;
+  background: transparent;
+}
+.search input:focus{
+  border: none;
+  border: 5px solid rgb(2, 87, 136);
+}
+.search button{
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* caption_css */
+.home-container{
+  display: flex;
 }
+.para{
+  margin: 100px;
+  width:17%;
+}
+.para p{
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: normal;
+  color: rgb(2, 87, 136);
+  /* color: rgb(15,41,76); */
+}
+.home-img{
+  margin: 100px;
+}
+.home-img img{
+  height: 500px;
+}
+
+/* Register */
+.card {
+  float: right;
+	width: 50%;
+  margin: 100px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.233);
+}
+.card h1{
+  padding-bottom: 40px;
+}
+.card a{
+  padding-bottom: 20px;
+}
+.inputfield {
+	right: 0;
+	outline: none;
+	width: 60%;
+	margin: 5px 10px;
+	padding: 5px 10px;
+	border-bottom: 2px solid #ccc;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	font-size: large;
+}
+
+.inputfield:focus {
+	outline: none;
+	border-bottom: 2px solid #000;
+}
+button {
+	width: 75%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #61616144;
+	color: #ffffff;
+} 
+.line {
+	justify-content: space-between;
+	width: 75%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+}
+
+button:active {
+	background-color: #ffffff00;
+	color: #000;
+	border: 1px solid #616161;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #616161;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #616161;
+}
+.login-signup{
+  background-image: url('./assets/login-background.jpg');
+  background-size: cover;
+  margin: fit-content;
+  height: 100vh;
+}
+
