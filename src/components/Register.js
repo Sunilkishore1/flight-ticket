@@ -38,7 +38,7 @@ function Register() {
 						</label>
 						<input type="password" id="password" className="inputfield" />
 					</div>
-					<button> Register </button>
+					<button id="login-reg"> Register </button>
 					<Link to="/login" className="link-button">
 						Already have an account?
 					</Link>

@@ -6,9 +6,6 @@ function Caption() {
             <div className='para'>
                 <p>READY TO TAKE OFF?!</p>
             </div>
-            {/* <div className='home-img'>
-                <img src={flight}></img>
-            </div> */}
         </div>
      );
 }

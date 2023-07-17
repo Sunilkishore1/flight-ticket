@@ -2,33 +2,49 @@ import React from 'react';
 import { Link} from 'react-router-dom';
 import icon from '../assets/iconSearch.png';
 import logo from '../assets/logo.png';
-import profile from '../assets/userIcon.png';
-function NavBar() {
+import avatar from '../assets/userIcon.png'
+import {useState, useEffect, useRef} from 'react';
+
+import { Input } from '@chakra-ui/react';
+
+export default function NavBar() {
+    const [open,setOpen]=useState(false);
+    // const [open, setOpen] = useState(false);
+
+  let menuRef = useRef();
+
     return (
-        <div className='container'>
+        <div className='container-nav'>
             <div className='company'>
             <img src={logo}></img>
             <h1 id='company-name'>AeroSearch</h1>
 
             </div>
             <div className='tools'>
-                <Link to={'/flights'}>All flight</Link>
-                <Link to={'/'}>Schedule</Link>
-                <Link to={'/'}>Passangers</Link>
-                <Link to={'/'}>Your orders</Link>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/schedules'}>Schedule</Link>
+                <Link to={'/booked'}>Booked Flights</Link>
             </div>
             <div className='third-nav'>
-                <div className='search'>
-                    <input type='text' placeholder='search flight'></input>
-                    <button id='search-button'><img src={icon}></img></button>
+                <div className='search-bar'>
+                    <input type='text' placeholder='Search..' ></input>
                 </div>
-                <div className='profile'>
-                    <Link to={'/'}><img src={profile}></img></Link>
-                    <h3>NameOfUser</h3>
-                </div>
-            </div>
-        </div>
-      );
-}
+                <div className='menu-container' ref={menuRef}>
+                    <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
+                        <img src={avatar} />
+                    </div>
 
-export default NavBar;
+                    <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
+                        <div className='dd-flex'>
+                            <Link to={'/profile'}>Profile</Link>
+                            <Link to={'/customer'}>Support</Link>
+                            <Link to={'/login'}>Logout</Link>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+      )
+    }

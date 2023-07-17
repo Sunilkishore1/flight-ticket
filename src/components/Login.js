@@ -26,7 +26,9 @@ function Login() {
 						</label>
 						<input type="password" id="password" className="inputfield" />
 					</div>
-					<button>Login</button>
+					<Link to='/'> <button id="login-reg">
+						Sign-in
+					</button></Link>
 					<Link to="/register" className="link-button">
 						Create a new Account
 					</Link>
