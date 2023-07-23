@@ -4,10 +4,13 @@ import icon from '../assets/iconSearch.png';
 import logo from '../assets/logo.png';
 import avatar from '../assets/userIcon.png'
 import {useState, useEffect, useRef} from 'react';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../redux/userSlice';
 
 import { Input } from '@chakra-ui/react';
 
 export default function NavBar() {
+    const user = useSelector(selectUser);
     const [open,setOpen]=useState(false);
     // const [open, setOpen] = useState(false);
 
@@ -36,12 +39,15 @@ export default function NavBar() {
 
                     <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
                         <div className='dd-flex'>
+                            <h2>{user.username}</h2>
+                            <hr></hr>
                             <Link to={'/profile'}>Profile</Link>
                             <Link to={'/customer'}>Support</Link>
                             <Link to={'/login'}>Logout</Link>
                         </div>
                     </div>
                 </div>
+                
                 
             </div>
             

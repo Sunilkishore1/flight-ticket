@@ -109,7 +109,7 @@
 /* Register */
 .card {
   float: right;
-	width: 50%;
+	width: 40%;
   margin: 100px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -124,6 +124,15 @@
 }
 .card a{
   padding-bottom: 20px;
+}
+.card-contents input{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+  border:2px solid white;
+	border-radius: 5px;
+  background-color: #ffffff82;
 }
 /* .inputfield {
 	right: 0;
@@ -295,6 +304,11 @@ a:active {
 .dd-flex a{
   display: block;
 
+}
+.dd-flex h2{
+  color:rgb(2, 87, 136);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #slider{

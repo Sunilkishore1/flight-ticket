@@ -14,29 +14,16 @@ function Register() {
 				
 				<div className="card">
 					<h1> Register </h1>
-					<div className="line">
-						<label htmlFor="name">
-							<h2> Name: </h2>
-						</label>
-						<input type="text" id="" className="inputfield" />
-					</div>
-					<div className="line">
-						<label htmlFor="username">
-							<h2> Username: </h2>
-						</label>
-						<input type="text" id="username" className="inputfield" />
-					</div>
-					<div className="line">
-						<label htmlFor="email">
-							<h2> E-mail: </h2>
-						</label>
-						<input type="text" id="email" className="inputfield" />
-					</div>
-					<div className="line">
-						<label htmlFor="password">
-							<h2> Password: </h2>
-						</label>
-						<input type="password" id="password" className="inputfield" />
+					<div className="card-contents">
+						<div className="line">
+							<input type="text" id="" className="inputfield" placeholder="Name"/>
+						</div>
+						<div className="line">
+							<input type="email" id="email" className="inputfield" placeholder="E-mail"/>
+						</div>
+						<div className="line">
+							<input type="password" id="password" className="inputfield" placeholder="Password"/>
+						</div>
 					</div>
 					<button id="login-reg"> Register </button>
 					<Link to="/login" className="link-button">
