@@ -3,7 +3,7 @@ import "./booktickets.css";
 
 function BookTickets() {
     return ( 
-        <>
+        <div className='top-outter'>
         <div className='top'>
             <h1 className='tet'>Search Flights</h1>
             <div className='bookcard'>
@@ -25,7 +25,7 @@ function BookTickets() {
                 <button type="submit" className="ticketsearch"><i class="fa fa-search"></i></button>
             </div>
         </div>
-        </>
+        </div>
      );
 }
 

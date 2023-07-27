@@ -10,6 +10,7 @@ import { selectUser } from '../redux/userSlice';
 import { Input } from '@chakra-ui/react';
 
 export default function NavBar() {
+    
     const user = useSelector(selectUser);
     const [open,setOpen]=useState(false);
     // const [open, setOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function NavBar() {
                             <hr></hr>
                             <Link to={'/profile'}>Profile</Link>
                             <Link to={'/customer'}>Support</Link>
-                            <Link to={'/login'}>Logout</Link>
+                            <Link to={'/login'} onClick={e=>window.localStorage.clear()}>Logout</Link>
                         </div>
                     </div>
                 </div>

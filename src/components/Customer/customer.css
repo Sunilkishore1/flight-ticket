@@ -1,0 +1,49 @@
+.Customer-content{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 90px;
+    height: fit-content;
+    background-color: rgb(250, 254, 254);
+}
+.Customer-content label{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(37,62,101);
+    margin-left: 150px;
+    padding-right: 30px;
+}
+.Customer-content h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: aliceblue;
+    background-color:rgb(37,62,101) ;
+}
+.mail{
+    margin: 100px;
+    display: inline-block
+}
+.mail label{
+    padding-right: 50px;
+}
+.mail input{
+    border: 1px solid rgb(101, 101, 101);
+}
+.query textarea{
+    width: 250px;
+    border:2px solid rgb(121, 121, 121);
+}
+.customer-button{
+    /* margin-left:100px; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.customer-button button{
+    padding: 5px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    background-color:rgb(37,62,101)  ;
+    border-radius: 1px solid rgb(37,62,101) ;
+}

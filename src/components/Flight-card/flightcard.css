@@ -1,0 +1,70 @@
+.flight-card-container{
+    width: 70%;
+    background-color: azure;
+    margin-left: 150px;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.flight-card-first img{
+    height: 60px;
+    width: auto;
+}
+.flight-card-first h3{
+    color: gray;
+    margin-left: -5px;
+}
+.flight-card-container p{
+    color: grey;
+    font-size: small;
+    margin-top: -10px;
+}
+.flight-starter{
+    margin-left: 100px;
+}
+.flight-starter h4{
+    font-weight: bold;
+    margin-left: 42px;
+}
+.flight-starter h3{
+    color: grey;
+    font-size: 25px;
+    margin-top: -18px;
+}
+
+.flight-ender{
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.flight-ender h4{
+    font-weight: bold;
+    margin-left: 42px;
+}
+.flight-ender h3{
+    color: grey;
+    font-size: 25px;
+    margin-top: -18px;
+}
+.flight-price{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.flight-price h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(35,61,103);
+}
+.flight-line{
+    border-right: 1px solid black;
+}
+.flight-book{
+    margin-left: 60px;
+    margin-top: 25px;
+}
+.flight-book button{
+    font-size:20px;
+    width: 150px;
+    background-color: rgb(35,61,103);
+    padding: 10px;
+}

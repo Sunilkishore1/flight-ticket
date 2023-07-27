@@ -5,6 +5,8 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Schedules from './components/Schedule/Schedules';
 import BookedFlight from './components/TicketBooked/BookedFlight';
+import Book from './components/Book/Book';
+import Customer from './components/Customer/Customer';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         <Route path='/' element={ <Home/>}/>
         <Route path='/schedules' element={ <Schedules />}/>
         <Route path='/booked' element={ <BookedFlight/>}/>
-
+        <Route path='/book/:id' element={<Book/>} />
+        <Route path='/customer' element={<Customer/>} />
       </Routes>
       </BrowserRouter>
       
